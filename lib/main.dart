@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:news_app_using_bloc/SendData/view.dart';
 import 'package:news_app_using_bloc/views/apple/bloc/cubit.dart';
 import 'package:news_app_using_bloc/views/business/bloc/cubit.dart';
 import 'package:news_app_using_bloc/views/home/view.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         // home: HomeView(),
-        home: HomeView(),
+        debugShowCheckedModeBanner: false,
+        home: SendData(),
       ),
     );
   }
